@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Living</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/font.css" />
+    <link rel="stylesheet" href="css/style-nobleliving.css" />
+    <link rel="stylesheet" href="css/style-nobleliving-add.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style type="text/css"></style>
+
+</head>
+
+<body>
+    <div class="page" id="main">
+        <nav class="app-navbar">
+            <div class="ribbon">
+                <div class="strip color-1"> </div>
+                <div class="strip color-2"> </div>
+                <div class="strip color-3"> </div>
+                <div class="strip color-4"> </div>
+            </div>
+            <div class="app-navbar-inner"></div>
+        </nav>
+        <nav class="page-navbar">
+            <button class="btn btn-back" type="button" onclick="window.history.go(-1)"></button><span
+                class="title">Summary</span>
+        </nav>
+        <div class="box">
+            <div class="header"> </div>
+            <div class="body">
+                <div class="service-detail-list-item">
+                    <div class="detail-box">
+                        <div class="heading">
+                            <h5 class="title">Location</h5>
+                        </div>
+                        <div class="body">
+                            <div class="list-heading">
+                                <div class="item">
+                                    <div class="label" style="font-size: 24px">Bangkok Ginza Thonglor</div>
+                                </div>
+                            </div>
+                            <div class="list-body">
+                                <div class="item">
+                                    <div class="label">Hotel Nikko Bangkok</div>
+                                </div>
+                            </div>
+                            <div class="list-footer">
+                                <div class="item">
+                                    <div class="label"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-date divider">
+                    <div class="service-date-time">
+                        <div class="detail-box adj">
+                            <div class="heading">
+                                <h5 class="title">Date Time</h5>
+                                <!-- <a class="a-link" href="#" style="float: right">Change</a> -->
+                            </div>
+                            <div class="body">
+                                <div class="list-heading">
+                                    <!-- <div class="item">
+                                        <div class="label">
+                                            <span class="date-cancel">12 May 2020 10:00</span><br />
+                                            Time updated : 12 May 2021 10:30
+                                        </div>
+                                        <div class="value"></div>
+                                    </div> -->
+                                    <div class="item">
+                                        <div class="label" style="font-size: 24px">
+                                            12 May 2021 10:30
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="list-body">
+                                    <div class="item">
+                                        <div class="label"></div>
+                                    </div>
+                                </div>
+                                <div class="list-footer">
+                                    <div class="item">
+                                        <div class="label"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-detail-list-item">
+                    <div class="detail-box">
+                        <div class="heading">
+                            <h5 class="title">
+                                <div class="label">Service</div>
+                            </h5>
+                        </div>
+                        <div class="body">
+                            <div class="list-heading">
+                                <div class="item">
+                                    <div class="label">
+                                        Four Hands Thai Massage<br />
+                                        <span class="text-notes">60 Minutes</span>
+                                    </div>
+                                    <div class="quantity">x1</div>
+                                    <div class="value">1,300 THB</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="service-detail-list-item">
+                    <div class="detail-box">
+                        <div class="heading">
+                            <h5 class="title">
+                                <div class="label">Additional</div>
+                            </h5>
+                        </div>
+                        <div class="body">
+                            <div class="list-heading">
+                                <div class="item">
+                                    <div class="label"> </div>
+                                </div>
+                            </div>
+                            <div class="list-body">
+                                <div class="item">
+                                    <div class="label">-</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-detail-list-item">
+                    <div class="detail-box">
+                        <div class="body">
+                            <div style="height: 0px; overflow: hidden;" id="vouchers">
+                                <div id="myBtn-vouchers" class="box-vouchers">
+                                    <img src="images/coupon.svg" alt="">
+                                    <div class="text">Get promo voucher</div>
+                                </div>
+                            </div>
+
+                            <div id="discount" class="section-discount ">
+                                <div style="display: flex;">
+                                    <div class="text">DISCOUNT</div> <a onclick="remove()">REMOVE</a>
+                                </div>
+                                <div class="price">-100 THB</div>
+                            </div>
+
+                            <div class="list-body">
+                                <div class="item">
+                                    <div class="label"> </div>
+                                </div>
+                            </div>
+                            <div class="list-footer">
+                                <div class="item">
+                                    <div class="label">Total <span class="notes">(VAT 7% Included) </span></div>
+                                    <div class="value" style="width: 100px;"> <span class="total-price">1,200 THB</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box-bottom-action laundry">
+            <div class="info">
+                <div class="label">Total 1 Selected</div>
+                <div class="value">1,300 THB</div>
+            </div>
+            <button class="btn btn-checkout" type="button" style="font-family: Bd;">CONFIRM</button>
+        </div>
+    </div>
+
+    <div id="myModal-vouchers" class="modal-vouchers">
+        <div class="modal-content-vouchers">
+            <div class="footer-top">
+                <img src="images/i-back.svg" alt="" id="close-vouchers" style=" position: absolute; top: 18px;">
+                <div class="title">VOUCHERS</div>
+            </div>
+            <div class="box-package coupon">
+                <div class="body">
+                    <div class="package-list">
+                        <div class="package-list-item">
+                            <div class="package-box coupon">
+                                <div style=" position: relative;">
+                                    <img src="images/1069.png" alt="" class="image-promotion">
+                                    <div class="topleft">
+                                        <div class="icon-info " href="#"></div>
+                                    </div>
+                                </div>
+                                <div style="width: 100%;">
+                                    <div style="margin-right: 8px;">
+                                        <h4 class="package-name">
+                                            ฿200 off
+                                        </h4>
+                                        <p class="package-desc-coupon">
+                                            Min spend ฿550 Maid / Air Con
+                                        </p>
+                                    </div>
+
+                                    <div class="section-promotion-bottom ">
+                                        <div class="text-valid ">Valid till Jun
+                                            30,2021</div>
+                                        <button class="btn-promotion">USE</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="package-list-item">
+                            <div class="package-box coupon coupon-used">
+                                <div style=" position: relative;">
+                                    <img src="images/1069.png" alt="" class="image-promotion">
+                                    <div class="topleft">
+                                        <div class="icon-info-used " href="#"></div>
+                                    </div>
+                                </div>
+                                <div style="width: 100%;">
+                                    <div style="margin-right: 8px;">
+                                        <h4 class="package-name">
+                                            50% off
+                                        </h4>
+                                        <p class="package-desc-coupon">
+                                            Min spend ฿500 Any Service
+                                        </p>
+                                    </div>
+
+                                    <div class="section-promotion-bottom ">
+                                        <div class="text-valid ">Valid till Jun
+                                            30,2021</div>
+                                        <button class="btn-promotion" disabled>USED</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="package-list-item">
+                            <div class="package-box coupon">
+                                <div style=" position: relative;">
+                                    <img src="images/1069.png" alt="" class="image-promotion">
+                                    <div class="topleft">
+                                        <div class="icon-info " href="#"></div>
+                                    </div>
+                                </div>
+                                <div style="width: 100%;">
+                                    <div style="margin-right: 8px;">
+                                        <h4 class="package-name">
+                                            25% off
+                                        </h4>
+                                        <p class="package-desc-coupon">
+                                            Min spend ฿500 Any Service Get code to friend and you’ll get voucher
+                                        </p>
+                                    </div>
+
+                                    <div class="section-promotion-bottom ">
+                                        <div class="text-valid ">Valid till Jun
+                                            30,2021</div>
+                                        <button class="btn-promotion">USE</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
+
+<style>
+
+.box-package .package-list .package-box .package-desc-coupon{
+	margin-bottom: 8px;
+    color: rgba(0, 0, 0, 0.4);
+    font-family: Reg;
+    font-size: 18px;
+    line-height: 1;
+    letter-spacing: 0.01rem;
+}
+
+    .box-package .package-list .package-box.coupon.coupon-used {
+	background-color: #f2f2f2;
+}
+
+    .box-package.coupon {
+        min-height: 100vh;
+        background-color: #FFFFFF;
+        padding-top: 0px;
+        
+    }
+
+    .box-package.coupon .package-box {
+        padding: 10px;
+        box-shadow: none;
+        border: 1px solid #f2f2f2;
+        display: flex; 
+        align-items: center;
+    }
+
+    .text-notes {
+        font-family: Reg;
+        font-size: 18px;
+        color: rgba(0, 0, 0, 0.6);
+    }
+
+    .icon-info {
+        background-color: #FFFFFF;
+        border-bottom-right-radius: 12px;
+        width: 20px;
+        height: 20px;
+        background-size: 14px;
+        align-self: center;
+        display: block;
+        background-repeat: no-repeat;
+        background-image: url(images/i-info.svg);
+        background-position: top left;
+    }
+
+    .icon-info-used {
+        background-color: #f2f2f2;
+        border-bottom-right-radius: 12px;
+        width: 20px;
+        height: 20px;
+        background-size: 14px;
+        align-self: center;
+        display: block;
+        background-repeat: no-repeat;
+        background-image: url(images/i-info.svg);
+        background-position: top left;
+
+    }
+
+    .box-vouchers {
+        font-family: Med;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 6px 12px;
+        color: #D26132;
+        text-transform: uppercase;
+        border: 1px solid #F2F2F2;
+        height: 40px;
+        margin-bottom: 16px;
+        border-radius: 8px;
+    }
+
+    .box-vouchers img {
+        margin-right: 8px;
+        width: 20px;
+        height: 20px;
+
+    }
+
+    .modal-vouchers {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.4);
+        -webkit-animation-name: fadeIn;
+        -webkit-animation-duration: 0.4s;
+        animation-name: fadeIn;
+        animation-duration: 0.4s
+    }
+
+    .modal-content-vouchers {
+        position: fixed;
+        bottom: 0;
+        background-color: #fefefe;
+        width: 100%;
+        height: 100%;
+        -webkit-animation-name: slideIn;
+        -webkit-animation-duration: 0.4s;
+        animation-name: slideIn;
+        animation-duration: 0.4s
+    }
+
+    .footer-top {
+        position: relative;
+        padding: 10px 16px;
+        height: 60px;
+        border-bottom: 1px solid #f2f2f2;
+        margin-bottom: 9px;
+    }
+
+    .footer-top .title {
+        font-family: Bd;
+        font-weight: bold;
+        font-size: 20px;
+        text-align: center;
+        color: rgba(0, 0, 0, 0.8);
+        margin-top: 10px;
+    }
+
+    .image-promotion {
+        border-radius: 6px;
+        width: 80px;
+        height: 80px;
+        margin-right: 12px;
+    }
+
+    .topleft {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+
+    .btn-promotion {
+        width: 80px;
+        height: 32px;
+        align-items: center;
+        padding: 6px 12px;
+        background-color: #d26132;
+        color: #FFFFFF;
+        border: none;
+        border-radius: 8px;
+        font-family: Med;
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .btn-promotion:disabled {
+        width: 80px;
+        height: 32px;
+        align-items: center;
+        padding: 6px 12px;
+        background: rgba(0, 0, 0, 0.1);
+        color: rgba(0, 0, 0, 0.4);
+        border: none;
+        border-radius: 8px;
+        font-family: Med;
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+
+    /* 
+    .box-package.laundry-disabled {
+    background-color: rgba(0, 0, 0, 0.5); 
+} */
+
+    .section-promotion-bottom {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .section-promotion-bottom .text-valid {
+        font-family: Reg;
+        font-size: 18px;
+        line-height: 18px;
+        color: #c52121;
+        margin-right: 19px;
+        margin-top: 7px;
+    }
+
+    /* Add Animation */
+    @-webkit-keyframes slideIn {
+        from {
+            bottom: -300px;
+            opacity: 0
+        }
+
+        to {
+            bottom: 0;
+            opacity: 1
+        }
+    }
+
+    @keyframes slideIn {
+        from {
+            bottom: -300px;
+            opacity: 0
+        }
+
+        to {
+            bottom: 0;
+            opacity: 1
+        }
+    }
+
+    @-webkit-keyframes fadeIn {
+        from {
+            opacity: 0
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+</style>
+
+<style>
+    .section-discount {
+        width: 100%;
+        margin-bottom: 14px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .section-discount .text {
+        font-family: Bd;
+        font-size: 24px;
+        margin-right: 8px;
+    }
+
+    .section-discount a {
+        font-family: Reg;
+        color: #d26132;
+        font-size: 20px;
+        line-height: 20px;
+        text-decoration-line: underline;
+        margin-top: 2px;
+    }
+
+    .section-discount .price {
+        color: #d26132;
+        font-family: Med;
+        font-size: 20px;
+    }
+</style>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    var modal_vouchers = document.getElementById("myModal-vouchers");
+    var main = document.getElementById("main");
+    var btn_vouchers = document.getElementById("myBtn-vouchers");
+    var close_vouchers = document.getElementById("close-vouchers");
+
+    btn_vouchers.onclick = function () {
+        modal_vouchers.style.display = "block";
+        main.style.display = "none";
+    }
+
+    close_vouchers.onclick = function () {
+        modal_vouchers.style.display = "none";
+        main.style.display = "block";
+    }
+
+
+
+    function remove() {
+        var vouchers = document.getElementById("vouchers");
+        var discount = document.getElementById("discount");
+        if (vouchers.style.height === "0px") {
+            vouchers.style.height = "40px";
+            discount.style.height = "0px";
+        } else {
+            vouchers.style.height === "0px"
+            discount.style.height = "24px";
+        }
+    }
+
+
+</script>

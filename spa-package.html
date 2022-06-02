@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Package Laundry</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/font.css" />
+    <link rel="stylesheet" href="css/style-nobleliving.css" />
+    <link rel="stylesheet" href="css/style-nobleliving-add.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="page" id="main">
+        <!-- Appbar -->
+        <nav class="app-navbar">
+            <div class="ribbon">
+                <div class="strip color-1"></div>
+                <div class="strip color-2"></div>
+                <div class="strip color-3"></div>
+                <div class="strip color-4"></div>
+            </div>
+        </nav>
+        <!-- Navbar Page -->
+        <nav class="page-navbar">
+            <button class="btn btn-back" type="button"></button>
+            <div class="icon"> <img src="images/i-service-spa.svg"></div>
+            <div class="service">
+                <div class="name">WELLNESS SPA</div>
+                <div class="info">
+                    <div class="project">
+                        Noble Ploenchit</div>
+                    <div class="unit">
+                        A5A12X</div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="box-package-calculate" style="padding: 4px 16px 4px 16px;">
+            <button class="nav-btn" id="myBtn-location">
+                <div style="display: flex;">
+                    <div class="title">Bangkok Ginza Thonglor</div>
+                    <img src="images/i-arrow-down.svg" alt="" class="image">
+                </div>
+                <div class="sub-title">Hotel Nikko Bangkok</div>
+
+            </button>
+        </div>
+    </div>
+    <!-- Package -->
+    <div class="box-package laundry">
+        <div class="header" style="font-size: 24px;">Treatments</div>
+        <div class="body">
+            <div class="package-list">
+                <div class="package-list-item">
+                    <div class="package-box laundry">
+                        <h4 class="package-name">
+                            Four hands Thai massage
+                        </h4>
+                        <p class="package-desc">
+                            60 Minutes
+                        </p>
+                        <div class="package-price">
+                            <div class="a btn-info" href="#"></div>
+                            <div class="price">
+                                <!-- <span class="normal">660 THB</span> -->
+                                <span class="special">1300 THB</span>
+                            </div>
+                            <div class="unit-adj">
+                                <button class="btn-dec" type="button"></button>
+                                <input class="unit-count" type="text" value="0" />
+                                <button class="btn-inc" type="button"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="package-list">
+                <div class="package-list-item">
+                    <div class="package-box laundry">
+                        <h4 class="package-name">
+                            Dr.Spiller-10 Step Facial Soothing Massage
+                        </h4>
+                        <p class="package-desc">
+                            60 Minutes
+                        </p>
+                        <div class="package-price">
+                            <div class="a btn-info" href="#"></div>
+                            <div class="price">
+                                <!-- <span class="normal">660 THB</span> -->
+                                <span class="special">1500 THB</span>
+                            </div>
+                            <div class="unit-adj">
+                                <button class="btn-dec" type="button"></button>
+                                <input class="unit-count" type="text" value="0" />
+                                <button class="btn-inc" type="button"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header" style="font-size: 24px;">packages</div>
+        <div class="body">
+            <div class="package-list">
+                <div class="package-list-item">
+                    <div class="package-box laundry">
+                        <h4 class="package-name">
+                            Wash+Ironing: 20 Pieces
+                        </h4>
+                        <p class="package-desc">
+                            The package must be used within 1 time.
+                        </p>
+                        <div class="package-price">
+                            <div class="a btn-info" href="#"></div>
+                            <div class="price">
+                                <!-- <span class="normal">660 THB</span> -->
+                                <span class="special">660 THB</span>
+                            </div>
+                            <div class="unit-adj">
+                                <button class="btn-dec" type="button"></button>
+                                <input class="unit-count" type="text" value="0" />
+                                <button class="btn-inc" type="button"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Float -->
+    <div class="box-bottom-action laundry">
+        <div class="info">
+            <div class="label">Total 1 Selected</div>
+            <div class="value">1,300 THB</div>
+        </div>
+        <button class="btn btn-checkout" type="button" style="font-family: Bd;">BOOK NOW</button>
+    </div>
+    </div>
+
+
+    <div id="myModal-location" class="modal-location">
+        <div class="modal-content-location">
+            <div class="footer-top">
+                <img src="images/i-back.svg" alt="" id="close-location" style=" position: absolute; top: 18px;">
+                <div class="title">LOCATIONS</div>
+            </div>
+            <div class="head">FAVORITES</div>
+            <div style="display: flex; align-items: center;">
+                <div class="box-content">
+                    <div class="title">Arnoma Grand Hotel</div>
+                    <div class="sub-title">Central World, Arnoma Hotel,
+                        Gaysorn Plaza, Erawan Shrine</div>
+                </div>
+                <i class="heart fa fa-heart" style="padding: 18px;"></i>
+            </div>
+
+            <div style="display: flex; align-items: center;">
+                <div class="box-content">
+                    <div class="title">Bangkok The Allez Sukhumvit 13</div>
+                    <div class="sub-title">Hyatt Regency Sukhumvit Bangkok</div>
+                </div>
+                <i class="heart fa fa-heart" style="padding: 18px; "></i>
+            </div>
+
+            <div style="display: flex; align-items: center;">
+                <div class="box-content">
+                    <div class="title">The Market Bangkok</div>
+                    <div class="sub-title">CentralWorld, Gaysorn Village and Big C Supercenter</div>
+                </div>
+                <i class="heart fa fa-heart" style="padding: 18px; "></i>
+            </div>
+
+            <div class="head">LOCATION</div>
+
+            <div style="display: flex; align-items: center;">
+                <div class="box-content">
+                    <div class="title">Bangkok Ginza Thonglor (Hotel Nikko Bangkok)</div>
+                    <div class="sub-title">Grande Center Point Hotel, Thonglo Road, Eighth Thonglo, Akyra Thonglo, Marriott Sukhumvit Thonglo</div>
+                </div>
+                <i class="heart fa fa-heart-o" style="padding: 18px;"></i>
+            </div>
+
+            <div style="display: flex; align-items: center;">
+                <div class="box-content">
+                    <div class="title">ibis Styles Ratchada</div>
+                    <div class="sub-title">ibis Styles Ratchada Bangkok Hotel, Huaykwang Junction, Swissotel Bangkok Ratchada</div>
+                </div>
+                <i class="heart fa fa-heart-o" style="padding: 18px;"></i>
+            </div>
+
+            <div style="display: flex; align-items: center;">
+                <div class="box-content">
+                    <div class="title">I’m Chinatown</div>
+                    <div class="sub-title">Chinatown, MRT Wat Mangkorn</div>
+                </div>
+                <i class="heart fa fa-heart-o" style="padding: 18px;"></i>
+            </div>
+
+
+
+        </div>
+
+    </div>
+</body>
+
+</html>
+
+
+<style>
+    .nav-btn {
+        width: 100%;
+        align-items: center;
+        padding: 0px;
+        height: 60px;
+        background: rgba(0, 0, 0, 0.01);
+        border: 1px solid #F2F2F2;
+        border-radius: 12px;
+        position: relative
+    }
+
+    .nav-btn .title {
+        font-family: Med;
+        font-size: 24px;
+        line-height: 24px;
+        color: #000000;
+        align-self: stretch;
+        padding-top: 8px;
+        padding-left: 12px;
+    }
+
+    .nav-btn .image {
+        position: absolute;
+        top: 25%;
+        width: 15px;
+        right: 10px;
+        height: 30px;
+    }
+
+    .nav-btn .sub-title {
+        text-align: left;
+        padding-left: 12px;
+        font-family: Reg;
+        font-size: 20px;
+        line-height: 20px;
+        color: #555B5E;
+        margin-bottom: 8px;
+    }
+
+
+    .modal-location {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.4);
+        -webkit-animation-name: fadeIn;
+        -webkit-animation-duration: 0.4s;
+        animation-name: fadeIn;
+        animation-duration: 0.4s
+    }
+
+    .modal-content-location {
+        position: fixed;
+        bottom: 0;
+        background-color: #fefefe;
+        width: 100%;
+        height: 100%;
+        -webkit-animation-name: slideIn;
+        -webkit-animation-duration: 0.4s;
+        animation-name: slideIn;
+        animation-duration: 0.4s
+    }
+
+    .footer-top {
+        position: relative;
+        padding: 10px 16px;
+        height: 60px;
+        border-bottom: 1px solid #f2f2f2;
+    }
+
+    .footer-top .title {
+        font-family: Bd;
+        font-weight: bold;
+        font-size: 20px;
+        text-align: center;
+        color: rgba(0, 0, 0, 0.8);
+        margin-top: 10px;
+    }
+
+    .heart {
+        font-size: 25px;
+        color: #D26230;
+    }
+
+    .head {
+        font-family: Bd;
+        font-size: 20px;
+        color: rgba(0, 0, 0, 0.4);
+        padding: 16px 16px 0px 16px;
+
+    }
+
+    .box-content {
+        width: 90%;
+        margin: 12px 16px 0px 16px;
+        padding-bottom: 12px;
+        border-bottom: 1px solid #f2f2f2;
+    }
+
+    .box-content .title {
+        font-family: Med;
+        font-size: 24px;
+        color: rgba(0, 0, 0, 0.8);
+    }
+
+    .box-content .sub-title {
+        font-family: Reg;
+        font-size: 20px;
+        color: rgba(0, 0, 0, 0.4);
+    }
+
+
+
+
+
+
+
+    /* Add Animation */
+    @-webkit-keyframes slideIn {
+        from {
+            bottom: -300px;
+            opacity: 0
+        }
+
+        to {
+            bottom: 0;
+            opacity: 1
+        }
+    }
+
+    @keyframes slideIn {
+        from {
+            bottom: -300px;
+            opacity: 0
+        }
+
+        to {
+            bottom: 0;
+            opacity: 1
+        }
+    }
+
+    @-webkit-keyframes fadeIn {
+        from {
+            opacity: 0
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    var modal_location = document.getElementById("myModal-location");
+    var main = document.getElementById("main");
+    var btn_location = document.getElementById("myBtn-location");
+    var close_location = document.getElementById("close-location");
+
+    btn_location.onclick = function () {
+        modal_location.style.display = "block";
+        main.style.display = "none";
+    }
+
+    close_location.onclick = function () {
+        modal_location.style.display = "none";
+        main.style.display = "block";
+    }
+
+
+    $(".heart.fa").click(function () {
+        $(this).toggleClass("fa-heart fa-heart-o");
+    });
+</script>

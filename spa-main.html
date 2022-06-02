@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Main</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/font.css" />
+	<link rel="stylesheet" href="css/style-nobleliving.css" />
+	<link rel="stylesheet" href="css/style-nobleliving-add.css" />
+	<style type="text/css"></style>
+</head>
+
+<body>
+	<div class="page" id="main">
+		<div>
+			<nav class="app-navbar">
+				<div class="ribbon">
+					<div class="strip color-1"></div>
+					<div class="strip color-2"></div>
+					<div class="strip color-3"></div>
+					<div class="strip color-4"></div>
+				</div>
+				<div class="app-navbar-inner"></div>
+			</nav>
+		</div>
+		<div>
+			<div class="box-unit">
+				<div class="project" id="choose_unit">
+					<div class="name">NUE Noble Fai Chai - Wang Lang</div>
+					<div class="unit">Unit : 1035 / 946</div>
+				</div>
+				<div class="project-list" id="unit_list">
+					<div class="list-item" id="unit_1">
+						<div class="name">NUE Noble Fai Chai - Wang Lang</div>
+						<div class="unit">Unit : 1035 / 946</div>
+					</div>
+					<div class="list-item" id="unit_2">
+						<div class="name">NUE Noble Fai Chai - Wang Lang</div>
+						<div class="unit">Unit : 1035 / 946</div>
+					</div>
+					<div class="list-item select" id="unit_3">
+						<div class="name">NUE Noble Fai Chai - Wang Lang</div>
+						<div class="unit">Unit : 1035 / 946</div>
+					</div>
+					<div class="list-item" id="unit_4">
+						<div class="name">NUE Noble Fai Chai - Wang Lang</div>
+						<div class="unit">Unit : 1035 / 946</div>
+					</div>
+				</div>
+				<div id="fade"></div>
+			</div>
+		</div>
+		<div>
+			<div class="box-service">
+				<div class="header">
+					<img class="logo-inline" src="images/logo-noble-living.svg" alt="Noble Living Logo" />
+					<h1 class="heading">Noble Living Services</h1>
+				</div>
+				<div class="body" style="padding-top: 0px;">
+					<div class="service-list">
+						<div class="service-list-item">
+							<div class="service-box" style=" background: rgba(227, 238, 249, 0.5);">
+								<a href="package-maid.html"><img class="service-logo" src="images/i-service-maid.svg"
+										alt="Maid" />
+								</a>
+								<div class="service-name" style="color: #2676BC;">Maid</div>
+							</div>
+						</div>
+						<div class="service-list-item">
+							<div class="service-box" style="background: rgba(232, 243, 227, 0.5);">
+								<a href="package-laundry.html"><img class="service-logo" src="images/i-service-laundry.svg" 
+									alt="Laundry" /></a>
+								<div class="service-name" style="color: #65874F;">Laundry</div>
+							</div>
+						</div>
+						<div class="service-list-item">
+							<div class="service-box" style="background: rgba(237, 228, 249, 0.5);">
+								<a href="package-air.html"><img class="service-logo" src="images/i-service-air.svg"
+										alt="Air-Con Service" /></a>
+								<div class="service-name" style="color: #612F7A;">Air-Con Service</div>
+							</div>
+						</div>
+						<div class="service-list-item">
+							<div class="service-box" style="background: #EBF6F9;">
+								<a href="package-air.html"><img class="service-logo"src="images/i-service-hygienic.svg" 
+									alt="Hygienic Service"/></a>
+								<div class="service-name" style="color: #226277;">HYGIENIC CLEAN</div>
+							</div>
+						</div>
+						<div class="service-list-item">
+							<div class="service-box" style="background: #ECF8F8;">
+								<a href="package-air.html"><img class="service-logo" src="images/i-service-spa.svg"
+										alt="Spa Service" /></a>
+								<div class="service-name" style="color: #389494;">WeLLNess Spa</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div>
+			<div class="box-bottom-action notification">
+				<button class="btn btn-noti" type="button">
+					Service Status <span class="number">3</span>
+				</button>
+			</div>
+		</div>
+	</div>
+	<script>
+		var doc = document
+		var chooseUnit = document.getElementById('choose_unit')
+		var unitList = document.getElementById('unit_list')
+		var unitListFade = document.getElementById('fade')
+
+		chooseUnit.addEventListener('click', function (e) {
+			unitList.classList.add('open')
+			unitListFade.addEventListener('click', function (e) {
+				unitList.classList.remove('open')
+			})
+		})
+
+		unitList.addEventListener('click', function (e) {
+			console.log(e.target.parentNode.id)
+			unitList.classList.remove('open')
+		})
+
+		function hasClass(elem, className) {
+			return new RegExp(' ' + className + ' ').test(
+				' ' + elem.className + ' '
+			)
+		}
+	</script>
+</body>
+
+</html>
